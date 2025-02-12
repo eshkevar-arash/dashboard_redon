@@ -1,0 +1,657 @@
+.main-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 3rem;
+}
+.main-left{
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 5rem;
+}
+.left-header{
+    display: flex;
+    justify-content: start;
+}
+.left-header_wrapper{
+    display: flex;
+    align-items: center;
+    gap: 1.9rem;
+}
+.left-header_title{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: .8rem;
+}
+.left-header_title-1 , .left-header_title-3{
+    color: var(--color_1A2029-3);
+    font-size: 1.6rem;
+    font-family: 'Raleway';
+    font-weight: 600;
+    letter-spacing: .1rem;
+}
+.left-header_title-1{
+    font-style: italic;
+}
+.left-header_title-2{
+    color: var(--color_14161D);
+    font-size: 3.2rem;
+    font-family: 'Raleway';
+    font-weight: 600;
+    letter-spacing: .2rem;
+}
+
+.left-header_icon{
+    cursor: pointer;
+}
+.left-header_icon svg{
+    pointer-events: none;
+}
+.left-header_icon svg path{
+    fill: var(--color_14161D) ;
+}
+.chart-bitcoin{
+    background-color: var(--color_ffffff_2);
+    border-radius: 2rem;
+    padding: 2rem;
+    box-shadow: 0 0 2px var(--border-right);
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 2rem;
+}
+.chart-bitcoin_row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+.chart-bitcoin_title{
+    color: var(--color_14161D);
+    letter-spacing: .1rem;
+    font-family: 'Raleway';
+    font-weight: 700;
+}
+.chart-bitcoin_filter{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.6rem;
+}
+.chart-bitcoin_dropdown{
+    height: 3.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #31353F;
+    padding: .5rem;
+    border-radius: .5rem;
+    cursor: pointer;
+    gap: 1rem;
+}
+.chart-bitcoin_dropdown span{
+    color: var(--color_1A2029-4);
+    font-size: 1rem;
+    letter-spacing: .1rem;
+    font-family: 'Raleway';
+    font-weight: 700;
+}
+.chart-bitcoin_modal{
+    width: 3.2rem;
+    height: 3.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #31353F;
+    cursor: pointer;
+}
+.chart-bitcoin_row-left{
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1rem;
+    min-width: 20rem;
+}
+.chart-bitcoin_dropdown-2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    gap: 1rem;
+}
+.chart-bitcoin_dropdown-2 h5{
+    color: var(--color_1A2029-4);
+    font-size: 1.4rem;
+    letter-spacing: .1rem;
+    font-family: 'Raleway';
+    font-weight: 500;
+}
+.chart-bitcoin_row-left span{
+    color: var(--color_1A2029-4);
+    font-size: 1.8rem;
+    letter-spacing: .1rem;
+    font-weight: 700;
+    font-family: 'Raleway';
+}
+.chart-bitcoin_row-right{
+    min-width: 24rem;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 1rem;
+    flex-wrap: wrap;
+    flex-grow: 1;
+}
+.chart-bitcoin_row-right-btn{
+    width: 4rem;
+    height: 2.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border: 1px solid #31353F;
+    outline: none;
+    background-color: transparent;
+    border-radius: 2rem;
+    color: var(--color_353E4D);
+    font-size: 1rem;
+    font-family: 'Poppins';
+    font-weight: 500;
+    transition: all .3s ease-in-out;
+}
+.chart-bitcoin_row-right-btn.active{
+    background: #3A6FF8;
+    border: none;
+}
+/*=======================================
+            OPERATION
+=======================================*/
+.operation{
+    background-color: var(--color_ffffff_2);
+    border-radius: 2rem;
+    padding: 2rem;
+    box-shadow: 0 0 2px var(--border-right);
+}
+.operation-navbar{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap:2rem;
+    flex-wrap: wrap;
+}
+.operation-navbar_title{
+    color: var(--color_14161D);
+    font-weight: 500;
+    font-size: 1.8rem;
+    flex: 1;
+    order: 1;
+}
+.operation-navbar_list{
+    display: flex;
+    align-items: center;
+    padding: .5rem;
+    border-radius: .8rem;
+    background-color: var(--color_f8f8f8);
+    gap: 1rem;
+    flex: 3;
+    order: 2;
+}
+.operation-navbar_item{
+    padding: .5rem 1.3rem;
+    font-weight: 500;
+    font-family: 'Raleway';
+    font-size: 1.4rem;
+    letter-spacing: .1rem;
+    color: var(--color_14161D);
+    cursor: pointer;
+    border-radius: .5rem;
+    transition: all 0.3s ease-in-out;
+}
+.operation-navbar_item.active{
+    background-color: var(--color_ffffff_2);
+    box-shadow: 0 2px 10px 0 #0000001A;
+    border: 1px solid var(--border-right);
+}
+.operation-navbar_item:not(.active):hover{
+    background-color: var(--aside_link_bg_hover);
+    color: var(--color_3a6ff8);
+
+    transition: all 0.3s ease-in-out;
+}
+.operation-navbar_caption{
+    margin-left: auto;
+    font-family: Raleway;
+    font-size: 1.4rem;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    white-space: nowrap;
+    flex: 1;
+    text-align: right;
+    order: 3;
+    color: var(--color_1A2029-3);
+}
+.operation__sections{
+    margin-top: 2.4rem;
+}
+.operation__section{
+    height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: opacity .3s ease-in-out;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 2.4rem;
+    align-items: stretch;
+}
+.operation_left{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 2rem;
+    align-items: stretch;
+}
+.operation_row-title{
+    margin-bottom: 1rem;
+    color: var(--color_1A2029-3);
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 1.4rem;
+    letter-spacing: 0.1em;
+
+}
+.operation_details{
+    background-color: var(--color_f8f8f8);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: .8rem;
+    border-radius: .8rem;
+    gap: 2rem;
+}
+.operation_dropdown{
+    background-color: var(--color_ffffff_2);
+    padding: .5rem .7rem;
+    border-radius: .7rem;
+    border: 1px solid var(--border-right);
+    box-shadow: 0 2px 10px 0 #0000001A;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    gap: 1rem;
+}
+.operation_dropdown > svg path{
+    fill: var(--color_14161D);
+}
+.operation_dropdown-title{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    color: var(--color_14161D);
+    font-size: 1.4rem;
+    font-weight: 600;
+    font-family: Raleway;
+    letter-spacing: .1rem;
+    text-transform: uppercase;
+}
+.operation_dropdown-title_icon{
+    width: 2rem;
+    height: 2rem;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.operation_dropdown-title_icon svg path:nth-child(1){
+    fill: var(--color_14161D);
+}
+.operation_price{
+    margin-left: auto;
+    color: var(--color_14161D);
+    font-family: Raleway;
+    font-size: 1.4rem;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+}
+.operation_target{
+    text-transform: uppercase;
+    font-family: Raleway;
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    padding: .2rem .8rem;
+    border-radius: 2rem;
+    color: var(--color_14161D);
+    background-color: var(--color_3a6ff8);
+
+}
+.operation_btn{
+    width: 22%;
+    border-radius: 1rem;
+    outline: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3rem;
+    border: 1px solid #1E2A41;
+    background: #1E2A41;
+    cursor: pointer;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 0 2rem;
+}
+.operation_btn span{
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: .04rem;
+    font-family: Raleway;
+}
+.operation__section.fade{
+    height: auto;
+    opacity: 1;
+    overflow: visible;
+}
+
+.main-right{
+
+}
+.coin{
+    display: grid;
+    grid-auto-rows: 17.8rem;
+    grid-template-columns: repeat(auto-fill,minmax(23rem,1fr));
+    gap: 3rem;
+}
+.coin_card{
+    background-color: var(--color_ffffff_2);
+    border-radius: 1rem;
+    box-shadow: var(--boxSadow_0000000D);
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 40%  auto;
+    row-gap: 1.5rem;
+}
+.coin_header{
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+}
+.coin_main-icon-header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+.coin_main-icon{
+    width: 4.4rem;
+    height: 4.4rem;
+    background-color: var(--color_f8f8f8f-4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1rem;
+}
+.coin_title{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 2rem;
+}
+.coin_title_1{
+    text-transform: capitalize;
+    font-family: Raleway;
+    font-size: 1.6rem;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    color: var(--color_14161D);
+}
+.coin_title_2{
+    text-transform: uppercase;
+    font-family: Raleway;
+    font-size: 1.2rem;
+    font-weight: 500;
+    letter-spacing: 0.04em;
+    /*color: var(--color_14161D);*/
+    color: var(--color_1A2029-3);
+}
+.coin_arrow-icon{
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+.coin_arrow-icon svg path{
+    fill: #1ECB4F;
+}
+
+.coin_caption{
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    gap: 2rem;
+}
+.coin-caption_left{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+}
+.coin-caption_left h6{
+    color: var(--color_14161D);
+    font-family: Raleway;
+    font-size: 2.1rem;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+}
+.coin-caption_left span{
+    font-family: Raleway;
+    font-size: 1.4rem;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    color: #1ECB4F;
+}
+.coin-caption_right{
+    flex-grow: 1;
+}
+.coin-caption_right svg{
+    width: 100%;
+    height: 6.78rem;
+    overflow: visible;
+}
+.coin_card.red .coin_arrow-icon svg{
+    transform: rotate(180deg);
+}
+.coin_card.red .coin_arrow-icon svg path{
+    fill: #F46D22;
+}
+.coin_card.red .coin-caption_left span{
+    color: #F46D22;
+}
+.portfolio{
+    margin-top: 5rem;
+    background-color: var(--color_ffffff_2);
+    box-shadow: 0 0 2px var(--border-right);
+    border-radius: 2rem;
+    padding: 2rem;
+}
+.portfolio_title{
+    text-transform: capitalize;
+    font-family: Raleway;
+    font-size: 2.4rem;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    text-align: left;
+    color: var(--color_14161D);
+    margin-bottom: 3.5rem;
+}
+.portfolio_rows{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: space-between;
+    gap: 3rem;
+}
+.portfolio-row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.portfolio_icon{
+    width: 4.4rem;
+    height: 4.4rem;
+    background-color: var(--color_f8f8f8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1rem;
+}
+.portfolio_sub-title{
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 2rem;
+    gap: 1rem;
+}
+.portfolio_sub-title h6{
+    text-transform: capitalize;
+    font-family: Raleway;
+    font-size: 1.6rem;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    color: var(--color_14161D);
+}
+.portfolio_sub-title span{
+    text-transform: uppercase;
+    font-family: Raleway;
+    font-size: 1.2rem;
+    font-weight: 500;
+    letter-spacing: 0.04em;
+    /*color: var(--color_14161D);*/
+    color: var(--color_1A2029-3);
+}
+.portfolio_details{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: .4rem;
+
+}
+.portfolio_details span:nth-child(1){
+    font-family: Raleway;
+    font-size: 1.2rem;
+    font-weight: 500;
+    letter-spacing: 0.04em;
+    color: #F46D22;
+}
+.portfolio_details span:nth-child(2){
+    font-family: Raleway;
+    font-size: 1.4rem;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    color: var(--color_14161D);
+}
+
+
+
+
+
+
+
+
+@media screen and (min-width: 576px) {
+
+}
+@media screen and (min-width: 768px) {
+
+}
+@media screen and (min-width: 992px) {
+
+
+}
+@media screen and (min-width: 1200px) {
+
+
+}
+@media screen and (min-width: 1400px) {
+
+}
+
+
+
+@media screen and (max-width: 1400px) {
+
+}
+@media screen and (max-width: 1354px) {
+    .operation-navbar_list{
+        order: 3;
+    }
+    .operation-navbar_caption{
+        order: 2;
+    }
+}
+@media screen and (max-width: 1200px) {
+
+}
+@media screen and (max-width: 992px) {
+    .main-container{
+        grid-template-columns: 1fr;
+    }
+    .operation-navbar_list{
+        order: 3;
+    }
+    .operation-navbar_caption{
+        order: 3;
+    }
+    .operation_btn{
+
+    }
+}
+@media screen and (max-width: 768px) {
+    .operation-navbar_title{
+        font-size: 1.6rem;
+    }
+    .operation_btn{
+        font-size: 1.6rem;
+    }
+}
+@media screen and (max-width: 576px) {
+    .operation-navbar_caption{
+        font-size: 1.3rem;
+    }
+    .operation-navbar_item{
+        font-size: 1.3rem;
+        padding: .4rem 1.2rem;
+    }
+    .operation_btn span{
+        font-size: 1.4rem;
+    }
+}
+@media screen and (max-width: 533px) {
+    .operation-navbar_list{
+        order: 3;
+    }
+    .operation-navbar_caption{
+        order: 2;
+    }
+}
+@media screen and (max-width: 500px) {
+    .operation__section{
+        flex-direction: column;
+    }
+    .operation_btn{
+        width: 100%;
+        margin-top: 0;
+        flex-direction: row;
+        height: 6rem;
+    }
+}

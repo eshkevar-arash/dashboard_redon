@@ -1,0 +1,217 @@
+.table-wrapper{
+    background-color: var(--color_ffffff_2);
+    border-radius: 2.2rem;
+    border: 1px solid var(--border-right);
+    box-shadow: 0 0 2px var(--border-right);
+}
+.table-header{
+    text-transform: capitalize;
+    padding: 2rem;
+    color: var(--color_14161D);
+    font-family: Raleway;
+    font-size: 2rem;
+    font-weight: 400;
+}
+.table{
+    width: 100%;
+    border-collapse: collapse;
+
+}
+
+.table th , .table td{
+    border-top:  1px solid var(--border-right);
+    padding-top: 1.2rem;
+    padding-bottom: 1.2rem;
+    text-transform: capitalize;
+    font-family: Raleway;
+    font-weight: 400;
+    font-size: 1.6rem;
+    text-align: left;
+    vertical-align: middle;
+    /*display: flex;
+    align-items: center;*/
+}
+.table th{
+    color: var(--color_1A2029-3);
+    opacity: .7;
+}
+.table td{
+    color: var(--color_14161D);
+}
+.table td img{
+    width: 5rem;
+    height: 5rem;
+    border-radius: 1.2rem;
+    object-fit: cover;
+}
+.table td .table_product-name{
+    color: var(--color_14161D);
+    font-weight: 400;
+    font-size: 1.6rem;
+    font-family: Raleway;
+}
+.table th:first-child, .table tr td:first-child{
+    padding-left: 2rem;
+}
+.table th:last-child, .table tr td:last-child{
+    padding-right: 2rem;
+    text-align: center;
+}
+.table tr td:first-child{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.table-2 thead th{
+    background-color: var(--color_f8f8f8);
+}
+.table-2 td img{
+    width: 4.8rem;
+    height: 4.8rem;
+    border-radius: 100%;
+}
+.table-2 tr td:nth-child(3){
+    color: #10B981;
+}
+.table-2 tr td:last-child{
+    color: #259AE6
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 576px) {
+
+}
+@media screen and (min-width: 768px) {
+
+}
+@media screen and (min-width: 992px) {
+
+
+}
+@media screen and (min-width: 1200px) {
+
+
+}
+@media screen and (min-width: 1400px) {
+
+}
+
+
+
+@media screen and (max-width: 1400px) {
+
+}
+@media screen and (max-width: 1354px) {
+
+}
+@media screen and (max-width: 1200px) {
+
+}
+@media screen and (max-width: 992px) {
+    .table-headerr{
+        font-size: 1.8rem;
+    }
+    .table th, .table td, .table td .table_product-name{
+        font-size: 1.4rem;
+    }
+    .table-2 td img {
+        width: 4rem;
+        height: 4rem;
+    }
+}
+@media screen and (max-width: 768px) {
+
+}
+@media screen and (max-width: 576px) {
+    .table th ,.table td, .table_product-name{
+        /*font-size: 1.2rem;*/
+    }
+    .table {
+        display: block; /* تغییر جدول به حالت بلوکی */
+        width: 100%; /* عرض کامل والد */
+    }
+
+    .table thead {
+        display: none; /* حذف سرستون‌ها */
+    }
+
+    .table tbody {
+        display: block; /* نمایش به صورت بلوکی */
+        width: 100%; /* عرض کامل */
+    }
+
+    .table tbody tr {
+        display: flex;
+        flex-direction: column; /* هر ردیف به یک بلوک تبدیل شود */
+        border: 1px solid var(--border-right);
+        margin-bottom: 1rem; /* فاصله بین ردیف‌ها */
+        border-radius: 1rem; /* زیباسازی با گوشه‌های گرد */
+        padding: 1rem; /* فضای داخلی */
+        width: 100%; /* عرض کامل برای هر ردیف */
+    }
+
+    .table tbody td {
+        display: flex;
+        justify-content: space-between; /* محتوای داخل سلول چپ و راست */
+        padding: 0.5rem 0; /* فاصله داخلی هر سلول */
+        width: 100%; /* هر سلول عرض کامل داشته باشد */
+        box-sizing: border-box; /* مدیریت پدینگ در عرض */
+    }
+
+    .table tbody td::before {
+        content: attr(data-label); /* نمایش عنوان ستون */
+        font-weight: bold;
+        color: var(--color_1A2029-3);
+        text-transform: capitalize;
+        flex: 1; /* فضای کافی برای عنوان */
+    }
+    td:first-child {
+        padding-left: 0!important;
+
+    }
+    .table th:last-child, .table tr td:last-child {
+        padding-right: 0!important;
+
+    }
+
+
+    .table-2 td img {
+        width: 3.8rem;
+        height: 3.8rem;
+    }
+
+}
+@media screen and (max-width: 533px) {
+
+}
+@media screen and (max-width: 500px) {
+
+}
